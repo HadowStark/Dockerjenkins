@@ -7,7 +7,7 @@ RUN apt-get update && apt-get install -y curl
 RUN curl https://get.docker.com/gpg | apt-key add -
 RUN echo deb http://get.docker.com/ubuntu docker main > /etc/apt/sources.list.d/docker.list
 
-#RUN apt-get install -y apt-transport-https
+RUN apt-get install -y apt-transport-https
 
 RUN apt-get update && apt-get install -y openjdk-6-jdk iptables ca-certificates lxc git-core lxc-docker
 
